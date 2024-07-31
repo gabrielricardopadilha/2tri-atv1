@@ -6,7 +6,7 @@ var txResultado = document.querySelector(".tx-resultado");
 var perguntas = [
     {
         enunciado: "A IA pode automatizar tarefas repetitivas.",
-        alternativas: [
+        alternativas: [    
             "Vai eliminar tarefas monotonas",
             "Vai tirar muitos empregos"
         ]
@@ -42,13 +42,13 @@ var perguntas = [
     }
 ];
 
-var posiçaoAtual = 0;
+var posiçãoAtual = 0;
 var perguntaAtual;
 
 mostraPergunta();
 
 function mostraPergunta(){
-    perguntaAtual = perguntas[posiçaoAtual];
+    perguntaAtual = perguntas[posiçãoAtual];
     cxPerguntas.textContent = perguntaAtual.enunciado;
     mostraAlternativas();
 }
@@ -58,5 +58,5 @@ function mostraAlternativas() {
         var botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
         cxAlternativas.appendChild(botaoAlternativas);
-    }
+    }
 }
